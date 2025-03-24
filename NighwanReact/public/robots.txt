@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /career
+Allow: /terms
+Allow: /services
+Allow: /blog
+Allow: /blog-detail
+Allow: /contact
+Allow: /lean
+Allow: /portfolio
+Allow: /caseStudies
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /*

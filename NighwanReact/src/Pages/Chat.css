@@ -1,0 +1,255 @@
+/* Base styles for the container */
+.floating-chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Toggle button styles */
+.chat-toggle-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ff7518; /* Changed to orange */
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.chat-toggle-button:hover {
+  transform: scale(1.05);
+  background: black;
+}
+
+/* Chat window styles */
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  width: 360px;
+  height: 600px;
+  max-height: calc(100vh - 100px);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease;
+  overflow: hidden;
+}
+
+/* Header styles */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #ff7518;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  min-height: 60px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.chat-heading {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.close-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Messages container */
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #ffd1b3 transparent;
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background-color: #ffd1b3;
+  border-radius: 3px;
+}
+
+/* Message styles */
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.user-message {
+  background: #ff7518;
+  color: white;
+  align-self: flex-end;
+}
+
+.response-message {
+  background: #fff3e6;
+  color: #333333;
+  align-self: flex-start;
+}
+
+/* Input container */
+.input-container {
+  padding: 16px;
+  border-top: 1px solid #ffe6cc;
+  display: flex;
+  gap: 8px;
+  min-height: 70px;
+  background: white;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ffd1b3;
+  border-radius: 8px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.send-button {
+  padding: 10px;
+  background: #ff7518;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* Loading and error states */
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ff944d;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.error-message {
+  margin: 8px 16px;
+  padding: 10px;
+  background: #ffe6cc;
+  color: #cc5200;
+  border-radius: 8px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+/* Responsive Design */
+
+/* For iPhone SE (375px width) */
+@media (max-width: 400px) {
+  .chat-window {
+    width: 90vw;
+    height: 75vh;
+    bottom: 60px;
+    right: 5px;
+  }
+
+  .chat-heading {
+    font-size: 1rem;
+  }
+
+  .input-container {
+    padding: 12px;
+  }
+
+  .input-container input {
+    font-size: 0.9rem;
+  }
+
+  .messages-container {
+    padding: 12px;
+  }
+
+  .chat-toggle-button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* For Galaxy Z Fold (Unfolded - 1812px width) */
+@media (min-width: 1600px) {
+  .chat-window {
+    width: 450px;
+    height: 650px;
+    bottom: 80px;
+  }
+
+  .chat-heading {
+    font-size: 1.4rem;
+  }
+
+  .messages-container {
+    font-size: 1.2rem;
+  }
+
+  .input-container input {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Galaxy Z Fold (Folded - 832px width) */
+@media (max-width: 850px) {
+  .chat-window {
+    width: 80vw;
+    height: 70vh;
+    bottom: 70px;
+    right: 5px;
+  }
+
+  .chat-heading {
+    font-size: 1.1rem;
+  }
+
+  .messages-container {
+    padding: 14px;
+  }
+
+  .input-container input {
+    font-size: 1rem;
+  }
+}
