@@ -130,7 +130,7 @@ const BlogDetailPage = () => {
           <div className="blog-details-header-content-body d-flex align-items-center">
             <div className="section-header">
               <h5 className="section-subtitle">Blog</h5>
-              <h1 className="section-title fade-in">{Blogs[type]?.title}</h1>
+              <h2 className="section-title fade-in">{Blogs[type]?.title}</h2>
             </div>
             <div className="img-box">
               <img src={Blogs[type]?.imgHero} alt="Blog" />
@@ -179,7 +179,7 @@ const BlogDetailPage = () => {
           <div className="section-header d-flex align-items-end justify-content-between">
             <div className="left">
               <h5 className="section-subtitle">OUR LATEST BLOGS</h5>
-              <h1 className="section-title">Read more blogs of our company</h1>
+              <h2 className="section-title">Read more blogs of our company</h2>
               <p>Are you busy reading out IT fires instead of focusing on your core business</p>
             </div>
           </div>
@@ -191,9 +191,9 @@ const BlogDetailPage = () => {
               </div>
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
-                <h1 className="section-title">
+                <h2 className="section-title">
                   <Link to="/blogs/erp">New EU battery law could mean EOL for low-cost smartphones</Link>
-                </h1>
+                </h2>
                 <Link to="/blogs/erp" className="theme-btn">
                   <i className="icon-right iconoir-arrow-up-right"></i>
                 </Link>
@@ -206,9 +206,9 @@ const BlogDetailPage = () => {
               </div>
               <div className="news-item-body">
                 <h5 className="section-subtitle">CLOUD COMPUTING</h5>
-                <h1 className="section-title">
+                <h2 className="section-title">
                   <Link to="/blogs/hrms">FTC reported to be investigating OpenAI...</Link>
-                </h1>
+                </h2>
                 <Link to="/blogs/hrms" className="theme-btn">
                   <i className="icon-right iconoir-arrow-up-right"></i>
                 </Link>

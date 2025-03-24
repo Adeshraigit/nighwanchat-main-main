@@ -13,9 +13,9 @@ function Privacy() {
           <div className="custom-container">
             <div className="hero-portfolio-body">
               <div className="hero-section-content text-center">
-                <h1 className="section-title fade-in">
+                <h2 className="section-title fade-in">
                     Privacy Policy
-                </h1>
+                </h2>
               </div>
             </div>
           </div>

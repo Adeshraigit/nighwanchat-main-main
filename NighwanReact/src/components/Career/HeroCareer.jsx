@@ -17,7 +17,7 @@ const HeroCareer = () => {
           <div className="hero-portfolio-body">
             <div className="hero-section-content text-center">
               <h5 className="section-subtitle">Career</h5>
-              <h1 className="section-title fade-in">You have great opportunities</h1>
+              <h2 className="section-title fade-in">You have great opportunities</h2>
               <p>
                 If you are a talented and ambitious individual looking to make a mark in your career,
                 we invite you to explore our career opportunities.

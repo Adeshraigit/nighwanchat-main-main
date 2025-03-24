@@ -19,7 +19,7 @@ const ServiceArea = () => {
           <div className="service2-header d-flex align-items-center justify-content-between w-full">
             <div className="left">
               <h5 className="section-subtitle">Our Lean Consultancy Services</h5>
-              {/* <h1 className="section-title"></h1> */}
+              <h2 className="section-title">Our professional experts</h2>
               <p>
               We deliver best-in-class lean solutions to optimize efficiency. Our consulting process starts with a comprehensive assessment of your existing operations, workflows, and inefficiencies, identifying key areas for improvement and waste reduction to drive sustainable growth.
               </p>

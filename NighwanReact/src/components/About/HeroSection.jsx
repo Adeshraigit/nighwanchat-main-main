@@ -21,19 +21,19 @@ const HeroSection = () => {
 
             <div className="hero-company-boxes">
               <div className="hero-company-box simple-shadow">
-                <h1>150+</h1>
+                <h2>150+</h2>
                 <h3>Projects</h3>
               </div>
               <div className="hero-company-box simple-shadow">
-                <h1>99%</h1>
+                <h2>99%</h2>
                 <h3>Client Satisfaction</h3>
               </div>
               <div className="hero-company-box simple-shadow">
-                <h1>200 +</h1>
+                <h2>200 +</h2>
                 <h3>Our Customer</h3>
               </div>
               <div className="hero-company-box simple-shadow">
-                <h1>2020</h1>
+                <h2>2020</h2>
                 <h3>&nbsp;&nbsp;Since</h3>
               </div>
             </div>

@@ -12,7 +12,7 @@ const NotFound = () => {
         <meta name="robots" content="index, follow" />
         </Helmet>
       <div className="text-center">
-        <h1 className="display-1 fw-bold text-danger">404</h1>
+        <h2 className="display-1 fw-bold text-danger">404</h2>
         <p className="fs-3">Oops! Page not found.</p>
         <p className="lead">
           The page youre looking for doesnt exist or has been moved.

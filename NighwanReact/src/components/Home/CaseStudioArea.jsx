@@ -28,7 +28,7 @@ const CaseStudioArea = () => {
       <div className="custom-container">
         <div className="case-studio-header text-center">
           <h5 className="section-subtitle">Detailing Our Products</h5>
-          <h1 className="section-title">Powerful AI-Driven Solutions to Meet Your Needs</h1>
+          <h2 className="section-title">Powerful AI-Driven Solutions to Meet Your Needs</h2>
         </div>
 
         <div className="case-studio">

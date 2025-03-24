@@ -29,7 +29,7 @@ const AboutArea = () => {
         <div className="about2-inner-box">
           <div className="about2-header">
             <h5 className="section-subtitle">SPECIALIZATION</h5>
-            <h1 className="section-title">What Makes Nighwan Tech Unique?</h1>
+            <h2 className="section-title">What Makes Nighwan Tech Unique?</h2>
             <div>
               Nighwan Technology Pvt. Ltd. is redefining lean manufacturing technology by integrating AI, ML, and data analytics into the core of its solutions. Unlike traditional ERP or manufacturing management systems, Nighwan Tech focuses on real-time data-driven decision-making, waste reduction, and process optimization tailored for the Indian market.
             </div>
@@ -136,18 +136,18 @@ const AboutArea = () => {
                     <img src={about2Tab1} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon1} alt="Icon" />
                       </span>
                       Smarter, Faster, Leaner Operations
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Harness the power of AI-driven optimization to streamline processes, enhance decision-making, and eliminate inefficiencies.  
                       </p>
                       <p>Our AI solutions analyze vast datasets in real time, providing actionable insights to improve production, resource allocation, and workflow automation.</p>
-                      <p>By integrating machine learning and intelligent algorithms, we help businesses reduce costs, improve accuracy, and drive innovation. Whether it’s predictive analytics, automated reporting, or intelligent workflow management, our AI-driven approach ensures your business stays ahead in the lean transformation journey.</p>
+                      <p>By integrating machine learning and intelligent algorithms, we help businesses reduce costs, improve accuracy, and drive innovation. Whether it's predictive analytics, automated reporting, or intelligent workflow management, our AI-driven approach ensures your business stays ahead in the lean transformation journey.</p>
                     </div>
                   </div>
                 </div>
@@ -161,12 +161,12 @@ const AboutArea = () => {
                     <img src={about2Tab2} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon4} alt="Icon" />
                       </span>
                       Predict Future Market Trends
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Make smarter business decisions with advanced demand forecasting powered by AI and data analytics. 
@@ -186,16 +186,16 @@ const AboutArea = () => {
                     <img src={about2Tab3} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon6} alt="Icon" />
                       </span>
                       Optimized Online Business Operations
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>Transform your e-commerce business with lean principles that enhance efficiency and reduce operational waste.</p>
                       <p> Our lean e-commerce solutions focus on process automation, inventory optimization, and real-time analytics to ensure smooth and cost-effective operations. </p>
-                      <p>We help businesses implement data-driven decision-making, streamline supply chains, and eliminate bottlenecks. Whether it’s managing vendors, automating order fulfillment, or optimizing digital storefronts, our solutions maximize profits, enhance customer satisfaction, and drive business growth in a competitive digital marketplace.</p>
+                      <p>We help businesses implement data-driven decision-making, streamline supply chains, and eliminate bottlenecks. Whether it's managing vendors, automating order fulfillment, or optimizing digital storefronts, our solutions maximize profits, enhance customer satisfaction, and drive business growth in a competitive digital marketplace.</p>
                     </div>
                   </div>
                 </div>
@@ -209,12 +209,12 @@ const AboutArea = () => {
                     <img src={about2Tab4} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon2} alt="Icon" />
                       </span>
                       Prevent Failures, Reduce Downtime
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Say goodbye to unexpected breakdowns with predictive maintenance powered by AI and IoT. 
@@ -234,12 +234,12 @@ const AboutArea = () => {
                     <img src={about2Tab5} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon3} alt="Icon" />
                       </span>
                       Data-Driven Lean Decisions
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Gain instant insights into your business operations with real-time analytics. Our advanced data visualization tools and AI-driven dashboards provide key performance metrics, helping organizations make informed decisions quickly. 
@@ -263,12 +263,12 @@ const AboutArea = () => {
                     <img src={about2Tab6} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon5} alt="Icon" />
                       </span>
                       Tailored Systems for Lean Management
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Ditch generic ERP solutions and embrace a custom-built ERP designed for lean manufacturing and efficient operations. 
@@ -288,12 +288,12 @@ const AboutArea = () => {
                     <img src={about2Tab7} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon5} alt="Icon" />
                       </span>
                       Achieve Operational Excellence
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Adopt a culture of continuous improvement with our Kaizen-driven lean consulting services. We help businesses implement small, incremental changes that drive long-term efficiency and productivity.  
@@ -312,12 +312,12 @@ const AboutArea = () => {
                     <img src={about2Tab8} alt="About" />
                   </div>
                   <div className="content-box card-h">
-                    <h1>
+                    <h2>
                       <span className="icon">
                         <img src={hwdIcon5} alt="Icon" />
                       </span>
                       Streamlined Logistics for Growth
-                    </h1>
+                    </h2>
                     <div className="content">
                       <p>
                       Optimize your supply chain with lean-focused logistics strategies that reduce costs and enhance efficiency.

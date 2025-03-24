@@ -15,7 +15,7 @@ const NewsArea = () => {
         <div className="section-header d-flex align-items-center justify-content-between">
           <div className="left">
             <h5 className="section-subtitle">DAILY NEWS</h5>
-            <h1 className="section-title">Read more about daily insights</h1>
+            <h2 className="section-title">Read more about daily insights</h2>
             <p>
               In a fast-paced world where information shapes, our daily news service is your
               informed about the latest developments

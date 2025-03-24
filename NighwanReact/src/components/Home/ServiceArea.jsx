@@ -15,9 +15,9 @@ const ServiceArea = () => {
         <div className="service-section-header section-header d-flex align-items-end justify-content-between">
           <div className="left">
             <h5 className="section-subtitle">WHAT WE'RE OFFERING</h5>
-            <h1 className="section-title">
+            <h2 className="section-title">
               Dealing in all professional <br />IT services.
-            </h1>
+            </h2>
           </div>
           <p>
             One fundamental aspect of IT services is infrastructure management. This involves the design,

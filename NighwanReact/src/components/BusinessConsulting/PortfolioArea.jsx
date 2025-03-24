@@ -22,9 +22,9 @@ const PortfolioArea = () => {
         <div className="section-header d-flex align-items-end justify-content-between">
           <div className="left">
             <h5 className="section-subtitle">PORTFOLIO</h5>
-            <h1 className="section-title">
+            <h2 className="section-title">
               Explore more about our <br /> business
-            </h1>
+            </h2>
           </div>
           <p>
             Where we proudly present a collection of our finest accomplishments and success stories.

@@ -17,10 +17,10 @@ const FeatureArea = () => {
           <div className="feature2-content">
             <div className="feature2-header">
               <h5 className="section-subtitle">LEAN CONSULTING EXCELLENCE</h5>
-              <h1 className="section-title">
+              <h2 className="section-title">
                 Build a solution that <br />
                 drives efficiency and growth.
-              </h1>
+              </h2>
             </div>
 
             <div className="feature2-content-body d-flex flex-wrap">

@@ -28,7 +28,7 @@ const JobDetail = () => {
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '20px' }}>{jobDetail?.designationName}</h1>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>{jobDetail?.designationName}</h2>
       {renderSection('Overview', jobDetail?.overView, 1)}
       {renderSection('Job Description', jobDetail?.jobDescription, 2)}
       {renderSection('Responsibilities', jobDetail?.responsibilities, 3)}

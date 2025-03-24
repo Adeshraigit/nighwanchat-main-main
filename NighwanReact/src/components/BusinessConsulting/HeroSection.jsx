@@ -13,9 +13,9 @@ const HeroSection = () => {
         <div className="custom-container">
           <div className="hero-section-content text-center">
             <h5 className="section-subtitle">LEAN CONSULTANCY</h5>
-            <h1 className="section-title fade-in">
-            Accelerated Growth with Lean Expertise
-            </h1>
+            <h2 className="section-title fade-in">
+            Empowering Innovation Through Developers
+            </h2>
             <p>
             Empowering businesses with modern strategies and data-driven insights, we help organizations achieve efficiency, agility, and sustainable success.
             </p>

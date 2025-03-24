@@ -10,9 +10,7 @@ function Terms() {
           <div className="custom-container">
             <div className="hero-portfolio-body">
               <div className="hero-section-content text-center">
-                <h1 className="section-title fade-in">
-                    Terms and Conditions
-                </h1>
+                <h2>Terms and Conditions</h2>
               </div>
             </div>
           </div>

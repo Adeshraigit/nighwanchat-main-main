@@ -204,7 +204,7 @@ export default function Chat() {
         <div className="chat-window">
           <div className="chat-header">
             <MessageCircle className="icon" />
-            <h1 className="chat-heading">NTPL AI Chat</h1>
+            <h2 className="chat-heading">NTPL AI Chat</h2>
             <button className="close-button" onClick={() => setIsOpen(false)}>
               <X size={20} />
             </button>

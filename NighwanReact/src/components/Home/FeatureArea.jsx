@@ -32,7 +32,7 @@ const FeatureArea = () => {
           <div className="feature-right">
             <div className="feature-content">
               <h5 className="section-subtitle">FEATURED PRODUCT</h5>
-              <h1 className="section-title">Seamless productivity with our new app</h1>
+              <h2 className="section-title">Seamless productivity with our new app</h2>
               <p>
                 Download Slack and experience a new era of organization and accomplishment.
               </p>

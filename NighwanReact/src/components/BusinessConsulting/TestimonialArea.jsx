@@ -13,7 +13,7 @@ const TestimonialArea = () => {
       <div className="custom-container">
         <div className="section-header text-center">
           <h5 className="section-subtitle">TESTIMONIAL</h5>
-          <h1 className="section-title">What people think about us</h1>
+          <h2 className="section-title">What people think about us</h2>
           <p>
             Their professionalism and commitment to our success were evident <br /> throughout the
             entire process.
@@ -25,7 +25,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Platform helped me to increase my sales business</h1>
+          <h2>Platform helped me to increase my sales business</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -42,7 +42,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Slack improve my business to futuristic next level!</h1>
+          <h2>Slack improve my business to futuristic next level!</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -59,7 +59,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={upwork2} alt="Testimonial" />
-          <h1>After consultation my studio branding all over</h1>
+          <h2>After consultation my studio branding all over</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -76,7 +76,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Slack improve my business to futuristic next level!</h1>
+          <h2>Slack improve my business to futuristic next level!</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -93,7 +93,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={upwork2} alt="Testimonial" />
-          <h1>After consultation my studio branding all over</h1>
+          <h2>After consultation my studio branding all over</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -116,7 +116,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Platform helped me to increase my sales business</h1>
+          <h2>Platform helped me to increase my sales business</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -133,7 +133,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Slack improve my business to futuristic next level!</h1>
+          <h2>Slack improve my business to futuristic next level!</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -150,7 +150,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={upwork2} alt="Testimonial" />
-          <h1>After consultation my studio branding all over</h1>
+          <h2>After consultation my studio branding all over</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -167,7 +167,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={webflow3} alt="Testimonial" />
-          <h1>Slack improve my business to futuristic next level!</h1>
+          <h2>Slack improve my business to futuristic next level!</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data
@@ -184,7 +184,7 @@ const TestimonialArea = () => {
         <div className="testimonial-item testimonial2-card">
           <img src={bgShape3} alt="Shape" className="bg-shape" />
           <img src={upwork2} alt="Testimonial" />
-          <h1>After consultation my studio branding all over</h1>
+          <h2>After consultation my studio branding all over</h2>
           <p>
             One aspect that sets IT Services apart is their proactive approach to security. In
             today's digital landscape, protecting our sensitive data

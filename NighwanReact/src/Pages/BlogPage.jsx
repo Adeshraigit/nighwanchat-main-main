@@ -25,9 +25,9 @@ const BlogPage = () => {
             <div className="hero-portfolio-body">
               <div className="hero-section-content text-center">
                 <h5 className="section-subtitle">Blog</h5>
-                <h1 className="section-title fade-in">
+                <h2 className="section-title fade-in">
                   Explore our blog for expert knowledge and inspiration
-                </h1>
+                </h2>
                 <p>
                   Stay connected with us by subscribing to our blog updates. By doing so, <br />
                   you'll receive notifications whenever we publish new articles.
@@ -48,9 +48,9 @@ const BlogPage = () => {
             </div>
             <div className="news-content">
               <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5>
-              <h1 className="section-title">
+              <h2 className="section-title">
                 OpenAI launches new alignment division to tackle risks of superintelligent AI
-              </h1>
+              </h2>
               <p>
                 The makers of AI have announced the company will be dedicating 20% of its compute
                 processing power over the next four years
@@ -78,12 +78,12 @@ const BlogPage = () => {
               </div>
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
-                <h1 className="section-title">
+                <h2 className="section-title">
                   <Link to="/blog-detail">
                     Bluebase launches Tap to Pay on smartphone for international and domestic
                     business
                   </Link>
-                </h1>
+                </h2>
                 <p>
                   Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
                   service to replace payment terminals at point of sale.
@@ -115,11 +115,11 @@ const BlogPage = () => {
               </div>
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
-                <h1 className="section-title">
+                <h2 className="section-title">
                   <Link to="/blog-detail">
                     Google Bard launches in EU, overcoming data privacy concerns in the region
                   </Link>
-                </h1>
+                </h2>
                 <p>
                   Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
                   service to replace payment terminals at point of sale.

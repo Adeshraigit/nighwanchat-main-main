@@ -28,7 +28,7 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div className="error-container">
-          <h1>Oops, something went wrong!</h1>
+          <h2>Oops, something went wrong!</h2>
           <p>{this.state.error?.message || "An unexpected error occurred."}</p>
           <button onClick={this.handleReload}>Reload Page</button>
         </div>

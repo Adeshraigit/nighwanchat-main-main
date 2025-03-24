@@ -28,13 +28,13 @@ const ProjectArea = () => {
         <div className="custom-row justify-content-between">
           <div className="project-left-details">
             <h5 className="section-subtitle">PRODUCTS</h5>
-            <h1 className="section-title">
+            <h2 className="section-title">
               Showcase of
               <br />
               our recognized
               <br />
               work
-            </h1>
+            </h2>
             <p>
               Our collaborative approach ensures that we truly understand our clients' unique
               requirements and challenges.

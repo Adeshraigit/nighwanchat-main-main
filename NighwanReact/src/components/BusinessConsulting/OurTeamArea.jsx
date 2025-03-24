@@ -13,10 +13,10 @@ const OurTeamArea = () => {
         <div className="section-header d-flex align-items-end justify-content-between w-full">
           <div className="left">
             <h5 className="section-subtitle">OUR TEAM</h5>
-            <h1 className="section-title">
+            <h2 className="section-title">
               Our team consists of
               <br /> world class experts
-            </h1>
+            </h2>
           </div>
           <p>
             We are proud to introduce you to the talented individuals who make up our consultancy's
