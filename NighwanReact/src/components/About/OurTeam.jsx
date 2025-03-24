@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/css/style.css'; // Updated CSS import path
 import '../../assets/css/responsive.css'; // Updated CSS import path
 import bgShape10 from '../../assets/imgs/bg-shape-10.svg'; // Updated image import path
@@ -26,9 +27,9 @@ const OurTeam = () => {
             </p>
           </div>
 
-          <a href="contact.html" className="theme-btn">
+          <Link to="/contact" className="theme-btn">
             Book an appointment with our expert now
-          </a>
+          </Link>
         </div>
 
         <div className="our-team-2-lists">
@@ -40,19 +41,19 @@ const OurTeam = () => {
             <span className="designation">Product Designer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,19 +65,19 @@ const OurTeam = () => {
             <span className="designation">Business Analyst</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -88,19 +89,19 @@ const OurTeam = () => {
             <span className="designation">Front End Developer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,19 +113,19 @@ const OurTeam = () => {
             <span className="designation">Back End Developer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -136,19 +137,19 @@ const OurTeam = () => {
             <span className="designation">Devops Engineer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -160,19 +161,19 @@ const OurTeam = () => {
             <span className="designation">Cloud Expert</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -184,19 +185,19 @@ const OurTeam = () => {
             <span className="designation">System Engineer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -208,19 +209,19 @@ const OurTeam = () => {
             <span className="designation">UX Designer</span>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-dribbble"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-twitter"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="#">
                   <i className="iconoir-instagram"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

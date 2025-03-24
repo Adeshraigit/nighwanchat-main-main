@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import featureImg1 from '../../assets/imgs/feature-img-1.png'; // Adjust the path to your assets
 import featureImg2 from '../../assets/imgs/feature-img-2.png';
 import '../../assets/css/style.css'; // Import your custom CSS
@@ -44,14 +45,14 @@ const FeatureArea = () => {
                 </li>
               </ul>
               <div className="btns-group">
-                <a href="#" className="theme-simple-btn">
+                <Link to="/app-store" className="theme-simple-btn">
                   <i className="lab la-apple"></i>
                   Get it on App Store
-                </a>
-                <a href="#" className="theme-simple-btn">
+                </Link>
+                <Link to="/play-store" className="theme-simple-btn">
                   <i className="lab la-google-play"></i>
                   Get it on Play Store
-                </a>
+                </Link>
               </div>
             </div>
           </div>

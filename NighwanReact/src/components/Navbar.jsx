@@ -286,27 +286,27 @@ const Navbar = () => {
                               <div className="mega-menu-footer d-flex align-items-center justify-content-between w-full">
                                 <ul className="mega-menu-social d-flex align-items-center">
                                   <li>
-                                    <a href="https://www.facebook.com/Nighwantech">
+                                    <a href="https://www.facebook.com/Nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-facebook"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://x.com/nighwantech">
+                                    <a href="https://x.com/nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-x"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.instagram.com/nighwantech/">
+                                    <a href="https://www.instagram.com/nighwantech/" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.linkedin.com/company/nighwan-technology-pvt-ltd/">
+                                    <a href="https://www.linkedin.com/company/nighwan-technology-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-linkedin"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.youtube.com/@Nighwantech">
+                                    <a href="https://www.youtube.com/@Nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-youtube"></i>
                                     </a>
                                   </li>
@@ -415,27 +415,27 @@ const Navbar = () => {
                               <div className="mega-menu-footer d-flex align-items-center justify-content-between w-full">
                                 <ul className="mega-menu-social d-flex align-items-center">
                                   <li>
-                                    <a href="https://www.facebook.com/Nighwantech">
+                                    <a href="https://www.facebook.com/Nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-facebook"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://x.com/nighwantech">
+                                    <a href="https://x.com/nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-x"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.instagram.com/nighwantech/">
+                                    <a href="https://www.instagram.com/nighwantech/" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.linkedin.com/company/nighwan-technology-pvt-ltd/">
+                                    <a href="https://www.linkedin.com/company/nighwan-technology-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-linkedin"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://www.youtube.com/@Nighwantech">
+                                    <a href="https://www.youtube.com/@Nighwantech" target="_blank" rel="noopener noreferrer">
                                       <i className="iconoir-youtube"></i>
                                     </a>
                                   </li>
@@ -489,7 +489,7 @@ const Navbar = () => {
                 <Link to="/contact" className="theme-btn">
                   Contact Us
                 </Link>
-            </div>
+              </div>
             </div>
           </div>
         </div>

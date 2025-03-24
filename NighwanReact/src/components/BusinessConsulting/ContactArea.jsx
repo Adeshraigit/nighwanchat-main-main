@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import flag from '../../assets/imgs/flag.png'; // Adjust the path to your assets
 import mapImg from '../../assets/imgs/map.svg';
 import supportIcon from '../../assets/imgs/support-icon.svg';
@@ -87,7 +88,7 @@ const ContactArea = () => {
                         onChange={handleChange}
                       />
                       <label htmlFor="privacy_policy_accept">
-                        You agree to our <a href="#">terms and conditions.</a>
+                        You agree to our <Link to="/terms">terms and conditions.</Link>
                       </label>
                       {errors.privacy_policy_accept && (
                         <span className="error-message">{errors.privacy_policy_accept}</span>

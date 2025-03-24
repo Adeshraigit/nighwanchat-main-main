@@ -10,6 +10,7 @@ import B2B from "../../assets/imgs/B2B E-Commerce Platform.png"
 import IOT from "../../assets/imgs/IoT-Enabled Predictive Maintenance.png"
 import HRMS from "../../assets/imgs/HRMS with Job Portal.png" 
 import TMS from "../../assets/imgs/Transport Management System.png"
+import { Link } from 'react-router-dom';
 
 const projects = [
   { img: ERP, title: "ERP System" },
@@ -71,9 +72,9 @@ const ProjectArea = () => {
                     <div className="project-item">
                       <div className="project-item-inner">
                         <h2 className={project.className || ''}>
-                          <a style={{ color: 'black' }}  href="/products">
+                          <Link style={{ color: 'black' }} to="/products">
                             {project.title}
-                          </a>
+                          </Link>
                         </h2>
                         <img src={project.img} alt={`Project ${index + 1}`} />
                       </div>

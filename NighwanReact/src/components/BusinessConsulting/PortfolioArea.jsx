@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgShape9 from '../../assets/imgs/bg-shape-9.svg'; // Adjust the path to your assets
 import portfolio1 from '../../assets/imgs/portfolio-1.jpg';
 import portfolio2 from '../../assets/imgs/portfolio-2.jpg';
@@ -40,30 +41,23 @@ const PortfolioArea = () => {
               </div>
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Work <br />
-                    consulting.
-                  </a>
+                  <Link to="/portfolio">HRMS with Job Portal</Link>
                 </h2>
-                <p>We have a best team for your consulting service.</p>
-                <a href="#" className="theme-btn">
+                <p>AI-powered recruitment and workforce management</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="portfolio-card portfolio-card-2 card-h">
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Take a <br />
-                    architecture <br />
-                    photography
-                  </a>
+                  <Link to="/portfolio">TMS (Transport Management System)</Link>
                 </h2>
-                <p>We have best photographers in our digital studio.</p>
-                <a href="#" className="theme-btn">
+                <p>Smart logistics and route optimization</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
               <div className="portfolio-img">
                 <img src={portfolio2} alt="Portfolio" />
@@ -75,16 +69,12 @@ const PortfolioArea = () => {
             <div className="portfolio-card portfolio-card-2 card-h">
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Take a <br />
-                    architecture <br />
-                    photography
-                  </a>
+                  <Link to="/portfolio">B2B E-Commerce Platform</Link>
                 </h2>
-                <p>We have a best team for your branding studio.</p>
-                <a href="#" className="theme-btn">
+                <p>Multi-vendor marketplace solution</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
               <div className="portfolio-img">
                 <img src={portfolio3} alt="Portfolio" />
@@ -96,18 +86,12 @@ const PortfolioArea = () => {
               </div>
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Work <br />
-                    consulting.
-                  </a>
+                  <Link to="/portfolio">IoTGuard System</Link>
                 </h2>
-                <p>
-                  We have a best team for <br />
-                  your consulting service.
-                </p>
-                <a href="#" className="theme-btn">
+                <p>Predictive maintenance solution</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -119,32 +103,23 @@ const PortfolioArea = () => {
               </div>
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Game <br />
-                    branding.
-                  </a>
+                  <Link to="/portfolio">Data Analytics Platform</Link>
                 </h2>
-                <p>
-                  Our best team for bring <br />
-                  your market to new era.
-                </p>
-                <a href="#" className="theme-btn">
+                <p>Business intelligence and insights</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="portfolio-card portfolio-card-2 card-h">
               <div className="portfolio-body">
                 <h2>
-                  <a href="#">
-                    Take a <br />
-                    architecture
-                  </a>
+                  <Link to="/portfolio">Industry Solutions</Link>
                 </h2>
-                <p>Explore your ideas with us to improve.</p>
-                <a href="#" className="theme-btn">
+                <p>Tailored technology for specific sectors</p>
+                <Link to="/portfolio" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
               <div className="portfolio-img">
                 <img src={portfolio6} alt="Portfolio" />
@@ -154,24 +129,24 @@ const PortfolioArea = () => {
             <div className="portfolio-social-card">
               <ul className="d-flex align-items-center">
                 <li>
-                  <a href="#">
+                  <Link to="/dribbble">
                     <i className="iconoir-dribbble"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/twitter">
                     <i className="iconoir-twitter"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/instagram">
                     <i className="iconoir-instagram"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/linkedin">
                     <i className="iconoir-linkedin"></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

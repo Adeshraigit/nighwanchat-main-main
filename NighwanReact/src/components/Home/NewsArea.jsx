@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import news1 from '../../assets/imgs/news-1.jpg'; // Adjust the path to your assets
 import news2 from '../../assets/imgs/news-2.jpg';
 import news3 from '../../assets/imgs/news-3.jpg';
@@ -31,9 +32,9 @@ const NewsArea = () => {
           <div className="news-content">
             <h5 className="section-subtitle section-subtitle1">MOBILE DEVELOPMENT</h5>
             <h1 className="section-title">
-              <a href="/blog-detail">
+              <Link to="/blog-detail">
                 OpenAI launches new alignment division to tackle risks of superintelligent AI
-              </a>
+              </Link>
             </h1>
             <p>
               Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
@@ -47,9 +48,9 @@ const NewsArea = () => {
                 <i className="las la-check"></i> Smart Reminders
               </li>
             </ul>
-            <a href="/blog-detail" className="theme-btn">
+            <Link to="/blog-detail" className="theme-btn">
               <i className="iconoir-arrow-up-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -61,9 +62,9 @@ const NewsArea = () => {
             <div className="news-item-body">
               <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
               <h1 className="section-title">
-                <a href="/blog-detail">
+                <Link to="/blog-detail">
                   Bluebase launches Tap to Pay on smartphone for international and domestic business
-                </a>
+                </Link>
               </h1>
               <p>
                 Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
@@ -83,9 +84,9 @@ const NewsArea = () => {
                   <i className="las la-check"></i> Task Management
                 </li>
               </ul>
-              <a href="/blog-detail" className="theme-btn">
+              <Link to="/blog-detail" className="theme-btn">
                 <i className="iconoir-arrow-up-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="news-item card-h">
@@ -95,9 +96,9 @@ const NewsArea = () => {
             <div className="news-item-body">
               <h5 className="section-subtitle">CLOUD COMPUTING</h5>
               <h1 className="section-title">
-                <a href="/blog-detail">
+                <Link to="/blog-detail">
                   Google Bard launches in EU, overcoming data privacy concerns in the region
-                </a>
+                </Link>
               </h1>
               <p>
                 Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
@@ -114,9 +115,9 @@ const NewsArea = () => {
                   <i className="las la-check"></i> Requirement
                 </li>
               </ul>
-              <a href="/blog-detail" className="theme-btn">
+              <Link to="/blog-detail" className="theme-btn">
                 <i className="iconoir-arrow-up-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

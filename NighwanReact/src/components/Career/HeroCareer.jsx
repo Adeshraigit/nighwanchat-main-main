@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgShape1 from '../../assets/imgs/bg-shape-1.svg'; // Adjust the path to your assets
 import '../../assets/css/style.css'; // Import your custom CSS
 import '../../assets/css/responsive.css'; // Import your responsive CSS
@@ -21,9 +22,9 @@ const HeroCareer = () => {
                 If you are a talented and ambitious individual looking to make a mark in your career,
                 we invite you to explore our career opportunities.
               </p>
-              <a href="contact.html" className="theme-btn">
+              <Link to="/contact" className="theme-btn">
                 Book an appointment now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

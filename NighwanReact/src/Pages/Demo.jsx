@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Demo() {
   return (
@@ -9,10 +10,10 @@ shadow-lg">
         <nav className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">My Landing Page</h1>
           <ul className="flex space-x-6">
-            <li><a href="#home" className="hover:text-gray-200">Home</a></li>
-            <li><a href="#about" className="hover:text-gray-200">About</a></li>
-            <li><a href="#services" className="hover:text-gray-200">Services</a></li>
-            <li><a href="#contact" className="hover:text-gray-200">Contact</a></li>
+            <li><Link to="#home" className="hover:text-gray-200">Home</Link></li>
+            <li><Link to="#about" className="hover:text-gray-200">About</Link></li>
+            <li><Link to="#services" className="hover:text-gray-200">Services</Link></li>
+            <li><Link to="#contact" className="hover:text-gray-200">Contact</Link></li>
           </ul>
         </nav>
       </header>
@@ -21,8 +22,8 @@ shadow-lg">
       <section id="home" className="flex flex-col items-center justify-center h-screen bg-white">
         <h1 className="text-4xl font-bold mb-6 text-indigo-700">Welcome to My Landing Page</h1>
         <p className="text-lg mb-8">Discover the best services and solutions.</p>
-        <a href="#services" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 
-rounded">Get Started</a>
+        <Link to="#services" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 
+rounded">Get Started</Link>
       </section>
 
       {/* About Section */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/css/style.css'; // Import your custom CSS
 import '../../assets/css/responsive.css'; // Import your responsive CSS
 import about from "../../assets/imgs/NighwanTech Startup.png"
@@ -15,9 +16,9 @@ const CompanyServiceArea = () => {
               </h2>
               <p>Get in touch today and start your transformation!</p>
             </div>
-            <a href="/contact" className="theme-btn">
+            <Link to="/contact" className="theme-btn">
               Contact Us
-            </a>
+            </Link>
           </div>
 
           {/* Updated image path */}

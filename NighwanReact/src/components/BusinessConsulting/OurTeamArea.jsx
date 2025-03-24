@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import team1 from '../../assets/imgs/team-1.jpg'; // Adjust the path to your assets
 import team2 from '../../assets/imgs/team-2.jpg';
 import team3 from '../../assets/imgs/team-3.jpg';
@@ -78,9 +79,9 @@ const OurTeamArea = () => {
                     blueprints for growth, innovation, and enduring prosperity.
                   </p>
                 </div>
-                <a href="#" className="theme-btn">
+                <Link to="#" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -138,9 +139,9 @@ const OurTeamArea = () => {
                     blueprints for growth, innovation, and enduring prosperity.
                   </p>
                 </div>
-                <a href="#" className="theme-btn">
+                <Link to="#" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -198,9 +199,9 @@ const OurTeamArea = () => {
                     blueprints for growth, innovation, and enduring prosperity.
                   </p>
                 </div>
-                <a href="#" className="theme-btn">
+                <Link to="#" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

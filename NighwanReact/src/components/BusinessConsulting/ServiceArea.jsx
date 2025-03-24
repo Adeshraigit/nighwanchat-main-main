@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bgShape7 from '../../assets/imgs/bg-shape-7.svg'; // Adjust the path to your assets
 import service1 from '../../assets/imgs/⁠Process Optimization.png';  
 import service2 from '../../assets/imgs/Waste Reduction.png';
@@ -24,9 +25,9 @@ const ServiceArea = () => {
               </p>
             </div>
 
-            <a href="/service" className="theme-btn">
-              Learn More <i className="iconoir-arrow-up-right"></i>
-            </a>
+            <Link to="/service" className="theme-btn">
+              <i className="iconoir-arrow-up-right"></i>
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/css/style.css'; // Updated CSS import path
 import '../../assets/css/responsive.css'; // Updated CSS import path
 import bgShape11 from '../../assets/imgs/bg-shape-11.svg'; // Updated image import path
@@ -29,9 +30,9 @@ const CtaArea = () => {
           </div>
           <h2>Need any further assistance?</h2>
           <p>Feel free to reach out for any inquiries or assistance.</p>
-          <a href="/contact" className="theme-btn">
-            Book an appointment now
-          </a>
+          <Link to="/contact" className="theme-btn">
+            Contact Us
+          </Link>
         </div>
       </div>
     </section>

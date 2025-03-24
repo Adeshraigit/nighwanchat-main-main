@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import serviceIcon1 from '../../assets/imgs/service-icon-1.svg'; // Adjust the path to your icons
 import tmsSvg from '../../assets/imgs/tms.svg';
 import dataSvg from '../../assets/imgs/hwd-icon-4.svg';
@@ -85,11 +86,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Web Design</a>
+                    <Link className="case-studio-cat">Web Design</Link>
                     <img src={hrmsBig} alt="hrms" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Mobile Design</a>
+                    <Link className="case-studio-cat">Mobile Design</Link>
                     <img src={hrms} alt="hrms" />
                   </div>
                 </div>
@@ -100,9 +101,9 @@ const CaseStudioArea = () => {
                     <p>
                     AI-powered recruitment, workforce management, and payroll in one centralized platform.
                     </p>
-                    <a href="/product-detail/hrms" className="theme-btn">
+                    <Link to="/product-detail/hrms" className="theme-btn">
                       <i className="iconoir-arrow-up-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -118,11 +119,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Web Design</a>
+                    <Link className="case-studio-cat">Web Design</Link>
                     <img src={tmsBig} alt="tms" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <a  className="case-studio-cat">Mobile View</a>
+                    <Link className="case-studio-cat">Mobile View</Link>
                     <img src={tms} alt="tms" />
                   </div>
                 </div>
@@ -133,9 +134,9 @@ const CaseStudioArea = () => {
                     <p>
                     Smart logistics management with real-time tracking and route optimization.
                     </p>
-                    <a href="/product-detail/tms" className="theme-btn">
+                    <Link to="/product-detail/tms" className="theme-btn">
                       <i className="iconoir-arrow-up-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -151,11 +152,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <a  className="case-studio-cat">Web Design</a>
+                    <Link className="case-studio-cat">Web Design</Link>
                     <img src={ecommerceBig} alt="ecommerce" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Mobile Design</a>
+                    <Link className="case-studio-cat">Mobile Design</Link>
                     <img src={ecommerce} alt="ecommerce" />
                   </div>
                 </div>
@@ -166,9 +167,9 @@ const CaseStudioArea = () => {
                     <p>
                     Vendor-friendly features, sales forecasting, and secure payment gateways for seamless transactions.
                     </p>
-                    <a href="product-detail/b2b" className="theme-btn">
+                    <Link to="/product-detail/b2b" className="theme-btn">
                       <i className="iconoir-arrow-up-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -184,11 +185,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Web Design</a>
+                    <Link className="case-studio-cat">Web Design</Link>
                     <img src={dataBig} alt="data" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <a className="case-studio-cat">Mobile Design</a>
+                    <Link className="case-studio-cat">Mobile Design</Link>
                     <img src={data} alt="data" />
                   </div>
                 </div>
@@ -199,9 +200,9 @@ const CaseStudioArea = () => {
                     <p>
                     Comprehensive analytics dashboards, predictive modeling, and insights for data-driven decisions.
                     </p>
-                    <a href="/product-detail/data" className="theme-btn">
+                    <Link to="/product-detail/data" className="theme-btn">
                       <i className="iconoir-arrow-up-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

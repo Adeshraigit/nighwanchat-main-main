@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import map from "../../assets/imgs/map.svg";
 
 const Contact = ({ locations, supportEmail, phoneNumber }) => {
@@ -34,7 +35,7 @@ const Contact = ({ locations, supportEmail, phoneNumber }) => {
               <h4>Support</h4>
               <p>Contact our fast support team</p>
               <h6>
-                <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
+                <Link to={`mailto:${supportEmail}`}>{supportEmail}</Link>
               </h6>
             </div>
 
@@ -45,7 +46,7 @@ const Contact = ({ locations, supportEmail, phoneNumber }) => {
               <h4>Phone</h4>
               <p>Mon-Fri from 9am to 6pm.</p>
               <h6>
-                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                <Link to={`tel:${phoneNumber}`}>{phoneNumber}</Link>
               </h6>
             </div>
           </div>

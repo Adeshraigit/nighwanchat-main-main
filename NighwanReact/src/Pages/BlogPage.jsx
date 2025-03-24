@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import news1 from '../assets/imgs/news-1.jpg'; 
 import news2 from '../assets/imgs/news-2.jpg';
 import news3 from '../assets/imgs/news-3.jpg';
@@ -62,9 +63,9 @@ const BlogPage = () => {
                   <i className="las la-check"></i> Smart Reminders
                 </li>
               </ul>
-              <a href="/blogs/aiml" className="theme-btn">
+              <Link to="/blogs/aiml" className="theme-btn">
                 <i className="iconoir-arrow-up-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -78,10 +79,10 @@ const BlogPage = () => {
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
                 <h1 className="section-title">
-                  <a href="/blog-detail">
+                  <Link to="/blog-detail">
                     Bluebase launches Tap to Pay on smartphone for international and domestic
                     business
-                  </a>
+                  </Link>
                 </h1>
                 <p>
                   Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
@@ -101,9 +102,9 @@ const BlogPage = () => {
                     <i className="las la-check"></i> Task Management
                   </li>
                 </ul>
-                <a href="/blogs/erp" className="theme-btn">
+                <Link to="/blogs/erp" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -115,9 +116,9 @@ const BlogPage = () => {
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
                 <h1 className="section-title">
-                  <a href="/blog-detail">
+                  <Link to="/blog-detail">
                     Google Bard launches in EU, overcoming data privacy concerns in the region
-                  </a>
+                  </Link>
                 </h1>
                 <p>
                   Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
@@ -134,9 +135,9 @@ const BlogPage = () => {
                     <i className="las la-check"></i> Requirement
                   </li>
                 </ul>
-                <a href="/blogs/hrms" className="theme-btn">
+                <Link to="/blogs/hrms" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

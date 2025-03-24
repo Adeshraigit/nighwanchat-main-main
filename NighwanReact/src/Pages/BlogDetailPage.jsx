@@ -11,7 +11,7 @@ import '../assets/css/responsive.css';
 import newsImg6 from '../assets/imgs/news-6.jpg';
 import newsImg7 from '../assets/imgs/news-7.jpg';
 import { Helmet } from 'react-helmet';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const BlogDetailPage = () => {
   const { type } = useParams();
@@ -67,7 +67,7 @@ const BlogDetailPage = () => {
       p13: "- Cloud-Based Systems: Accessible from anywhere...",
       p14: "- Data Security: Protects sensitive business information...",
       p15: "- Customizable Solutions: Tailored to meet the unique needs...",
-      p16: "Nighwan Technology’s advanced ERP solutions help businesses integrate processes...",
+      p16: "Nighwan Technology's advanced ERP solutions help businesses integrate processes...",
       meta: {
         description: "Future-proof your business with an AI-powered ERP system...",
         keywords: [
@@ -98,7 +98,7 @@ const BlogDetailPage = () => {
       "p13": "- Data Security & Compliance: Ensures adherence to labor laws and data protection regulations.",
       "p14": "- Employee Engagement & Retention: AI-driven insights enhance job satisfaction.",
       "p15": "- Customizable Solutions: Tailored to meet the unique needs of different industries.",
-      "p16": "Nighwan Technology’s AI-powered HRMS solutions help businesses manage their workforce more effectively, boosting productivity and employee satisfaction. Upgrade your HR management with us today!",
+      "p16": "Nighwan Technology's AI-powered HRMS solutions help businesses manage their workforce more effectively, boosting productivity and employee satisfaction. Upgrade your HR management with us today!",
       "meta": {
         "description": "Enhance workforce management with AI-powered HRMS solutions. Learn how AI-driven payroll, smart recruitment, and real-time attendance tracking improve HR efficiency.",
         "keywords": [
@@ -192,11 +192,11 @@ const BlogDetailPage = () => {
               <div className="news-item-body">
                 <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
                 <h1 className="section-title">
-                  <a href="/blogs/erp">New EU battery law could mean EOL for low-cost smartphones</a>
+                  <Link to="/blogs/erp">New EU battery law could mean EOL for low-cost smartphones</Link>
                 </h1>
-                <a href="/blogs/erp" className="theme-btn">
+                <Link to="/blogs/erp" className="theme-btn">
                   <i className="icon-right iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -207,11 +207,11 @@ const BlogDetailPage = () => {
               <div className="news-item-body">
                 <h5 className="section-subtitle">CLOUD COMPUTING</h5>
                 <h1 className="section-title">
-                  <a href="/blogs/hrms">FTC reported to be investigating OpenAI...</a>
+                  <Link to="/blogs/hrms">FTC reported to be investigating OpenAI...</Link>
                 </h1>
-                <a href="/blogs/hrms" className="theme-btn">
+                <Link to="/blogs/hrms" className="theme-btn">
                   <i className="icon-right iconoir-arrow-up-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
