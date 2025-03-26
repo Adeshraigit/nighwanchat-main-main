@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const JobDetail = () => {
   const { id } = useParams();
@@ -10,10 +11,14 @@ const JobDetail = () => {
   useEffect(() => {
     const fetchJobDetail = async () => {
       try {
-        const response = await fetch(`https://hrmsapi.leanxpert.in/api/JobPostDetail/${id}`);
+        const response = await fetch(`https://nighwanapi.azurewebsites.net/api/Job/GetJobById/${id}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch job details');
+        }
         const data = await response.json();
         setJobDetail(data);
-      } catch (err) {
+      } catch (error) {
+        console.error('Error fetching job details:', error);
         setError('Failed to fetch job details');
       } finally {
         setLoading(false);
@@ -26,15 +31,78 @@ const JobDetail = () => {
   if (loading) return <p>Loading job details...</p>;
   if (error) return <p className="error">{error}</p>;
 
+  if (!jobDetail) {
+    return <div>Job not found</div>;
+  }
+
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>{jobDetail?.designationName}</h2>
-      {renderSection('Overview', jobDetail?.overView, 1)}
-      {renderSection('Job Description', jobDetail?.jobDescription, 2)}
-      {renderSection('Responsibilities', jobDetail?.responsibilities, 3)}
-      {renderSection('Required Skills', jobDetail?.requiredSkills, 4)}
-      {renderSection('Benefits', jobDetail?.benefits, 5)}
-    </div>
+    <>
+      <Helmet>
+        <title>{jobDetail.designationName} | Career Opportunities | Nighwan Technology Pvt. Ltd.</title>
+        <meta name="description" content={`Join Nighwan Technology as a ${jobDetail.designationName}. ${jobDetail.jobDescription?.substring(0, 150)}...`} />
+        <meta name="keywords" content={`${jobDetail.designationName}, job opening, career opportunity, ${jobDetail.department}, software development jobs, IT careers, Nighwan Technology careers`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>{jobDetail.designationName}</h2>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Department</h3>
+          <p>{jobDetail.department}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Location</h3>
+          <p>{jobDetail.location}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Experience Required</h3>
+          <p>{jobDetail.experienceRequired}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Job Description</h3>
+          <p>{jobDetail.jobDescription}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Required Skills</h3>
+          <p>{jobDetail.requiredSkills}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Qualifications</h3>
+          <p>{jobDetail.qualifications}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Responsibilities</h3>
+          <p>{jobDetail.responsibilities}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Benefits</h3>
+          <p>{jobDetail.benefits}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Salary Range</h3>
+          <p>{jobDetail.salaryRange}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Employment Type</h3>
+          <p>{jobDetail.employmentType}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Posted Date</h3>
+          <p>{new Date(jobDetail.postedDate).toLocaleDateString()}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Application Deadline</h3>
+          <p>{new Date(jobDetail.applicationDeadline).toLocaleDateString()}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Contact Information</h3>
+          <p>{jobDetail.contactInformation}</p>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Additional Information</h3>
+          <p>{jobDetail.additionalInformation}</p>
+        </div>
+      </div>
+    </>
   );
 };
 
