@@ -352,7 +352,7 @@ const ContactArea = () => {
                   </p>
                 </div>
                 <div className="contact-office-info contact-info">
-                  <img src={mapIcon} alt="Map" />
+                  {/* <img src={mapIcon} alt="Map" /> */}
                   <h3>Visit our office</h3>
                   <p>
                     Hyderabad, TS <br />

@@ -17,15 +17,15 @@ const Service4Area = () => {
 
   const services = [
     { icon: serviceIcon1, title: "Lean Consultancy", description: "Optimizing operations to reduce waste and improve efficiency.", link: "lean" },
-    { icon: serviceIcon2, title: "Branding", description: "Crafting unique identities that resonate with audiences.", link: "Branding" },
-    { icon: serviceIcon3, title: "ERP Development", description: "Custom ERP solutions for seamless business management.", link:"ERP" },
-    { icon: serviceIcon4, title: "AI/ML Solutions", description: "Leveraging AI/ML for intelligent automation and insights.", link:"aim" },
-    { icon: serviceIcon5, title: "Web/Mobile App Development", description: "Building intuitive, scalable, and responsive digital experiences.", link:"Web" },
-    { icon: hwdIcon4, title: "Data Analytics", description: "Transforming data into actionable insights for decision-making.", link:"Data" },
-    { icon: serviceIcon7, title: "IoT Solutions", description: "Connecting devices for smarter, automated business operations.", link:"Iot" },
-    { icon: serviceIcon8, title: " Digital Marketing ", description: "Crafting strategies to drive engagement and growth online.", link:"Digital" },
-    { icon: serviceIcon9, title: "IT Support & Maintenance", description: "Ensuring seamless system performance with expert support.", link:"IT" },  
-    { icon: serviceIcon6, title: "DevOps Services", description: "Streamlining development and operations for faster deployment.", link:"Devops" }, 
+    { icon: serviceIcon2, title: "Branding", description: "Crafting unique identities that resonate with audiences.", link: "service-details/Branding" },
+    { icon: serviceIcon3, title: "ERP Development", description: "Custom ERP solutions for seamless business management.", link:"service-details/ERP" },
+    { icon: serviceIcon4, title: "AI/ML Solutions", description: "Leveraging AI/ML for intelligent automation and insights.", link:"service-details/aim" },
+    { icon: serviceIcon5, title: "Web/Mobile App Development", description: "Building intuitive, scalable, and responsive digital experiences.", link:"service-details/Web" },
+    { icon: hwdIcon4, title: "Data Analytics", description: "Transforming data into actionable insights for decision-making.", link:"service-details/Data" },
+    { icon: serviceIcon7, title: "IoT Solutions", description: "Connecting devices for smarter, automated business operations.", link:"service-details/Iot" },
+    { icon: serviceIcon8, title: " Digital Marketing ", description: "Crafting strategies to drive engagement and growth online.", link:"service-details/Digital" },
+    { icon: serviceIcon9, title: "IT Support & Maintenance", description: "Ensuring seamless system performance with expert support.", link:"service-details/IT" },  
+    { icon: serviceIcon6, title: "DevOps Services", description: "Streamlining development and operations for faster deployment.", link:"service-details/Devops" }, 
   ];
 
   return (
@@ -44,13 +44,13 @@ const Service4Area = () => {
 
         <div className="services-list">
           {services.map((service, key) => (
-            <Link key={key} to={service.link == "lean" ? "/lean" : `/service-details/${service.link}`} >
+            <Link key={key} to={service.link == "lean" ? "/lean" : `/${service.link}`} >
             <div  className="service-card simple-shadow">
               {service.badge && (
                 <span className="service-badge">{service.badge}</span>
               )}
               <img src={service.icon} alt="Service Icon" className="service-icon" />
-                <Link href={`/service-details/${service.link}`}><h3>{service.title}</h3></Link>
+                <Link to={`/${service.link}`}><h3>{service.title}</h3></Link>
               <p>{service.description}</p>
             </div>
             </Link>

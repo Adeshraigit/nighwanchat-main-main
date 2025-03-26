@@ -7,7 +7,7 @@ import AboutArea from '../components/Home/AboutArea';
 import TestimonialArea from '../components/Home/TestimonialArea';
 import ProjectArea from '../components/Home/ProjectArea';
 import NewsArea from '../components/Home/NewsArea';
-import FeatureArea from '../components/Home/FeatureArea'; 
+// import FeatureArea from '../components/Home/FeatureArea'; 
 import ContactArea from '../components/Home/ContactArea';   
 import Service4Area from '../components/About/Service4Area';
 import { Helmet } from "react-helmet";

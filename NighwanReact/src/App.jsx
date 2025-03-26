@@ -16,10 +16,13 @@ import Portfoliodetail from './Pages/portfolio-detail';
 import Terms from './Pages/Terms';
 import Privacy from './Pages/Privacy';
 import JobDetail from './Pages/JobDetail';
+import { Scroll } from 'lucide-react';
+import ScrollToTop from './components/ScrolltoTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         {/* The RootLayout wraps all these child routes */}
         <Route path="/" element={<RootLayout />}>

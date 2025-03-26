@@ -45,7 +45,7 @@ const Footer = () => {
                   <h3>Product</h3>
                   <ul>
                     <li><Link to="/product-detail/iot">Iot - Enabled Predictive Maintenance</Link></li>
-                    <li><Link to="/product-detail">AI-Powered Sales Forecasting</Link></li>
+                    <li><Link to="/product-detail/ai">AI-Powered Sales Forecasting</Link></li>
                     <li><Link to="/product-detail/tms">Transport Management System</Link></li>
                     <li><Link to="/product-detail/b2b">B2B E-Commerce Platform</Link></li>
                     <li><Link to="/product-detail/erp">ERP System</Link></li>
@@ -85,7 +85,7 @@ const Footer = () => {
                     <li><Link to="/lean">Lean Consultancy</Link></li>
                     <li><Link to="/service-details/ERP">ERP Development</Link></li>
                     <li>
-                      <Link to="/service-details">
+                      <Link to="/service-details/aim">
                       AI/ML Solutions
                       </Link>
                     </li>
@@ -113,7 +113,7 @@ const Footer = () => {
                   <h3>Product</h3>
                   <ul>
                     <li><Link to="/product-detail/iot">Iot - Enabled Predictive Maintenance</Link></li>
-                    <li><Link to="/product-detail">AI-Powered Sales Forecasting</Link></li>
+                    <li><Link to="/product-detail/ai">AI-Powered Sales Forecasting</Link></li>
                     <li><Link to="/product-detail/tms">Transport Management System</Link></li>
                     <li><Link to="/product-detail/b2b">B2B E-Commerce Platform</Link></li>
                     <li><Link to="/product-detail/erp">ERP System</Link></li>

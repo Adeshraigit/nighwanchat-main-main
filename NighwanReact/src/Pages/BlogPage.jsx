@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import news1 from '../assets/imgs/news-1.jpg'; 
-import news2 from '../assets/imgs/news-2.jpg';
-import news3 from '../assets/imgs/news-3.jpg';
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
 import ContactArea from '../components/Home/ContactArea';
 import { Helmet } from 'react-helmet';
+import aimlImgbM from '../assets/imgs/bM/aiml.png'; 
+import erpImgbM from '../assets/imgs/bM/erp.png';
+import hrmsImgbM from '../assets/imgs/bM/hrms.png'; 
 
 const BlogPage = () => {
   return (
@@ -44,10 +44,10 @@ const BlogPage = () => {
           {/* Sticky News */}
           <div className="sticky-news d-flex card-h" style={{ marginBottom: '5px' }}>
             <div className="news-img-box">
-              <img src={news1} alt="News" />
+              <img src={aimlImgbM} alt="News" />
             </div>
             <div className="news-content">
-              <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5>
+              {/* <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5> */}
               <h2 className="section-title">
                 OpenAI launches new alignment division to tackle risks of superintelligent AI
               </h2>
@@ -74,10 +74,10 @@ const BlogPage = () => {
             {/* News Item 1 */}
             <div className="news-item card-h" style={{ marginBottom: '5px' }}>
               <div className="news-img-box">
-                <img src={news2} alt="News" />
+                <img src={erpImgbM} alt="News" />
               </div>
               <div className="news-item-body">
-                <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
+                {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
                 <h2 className="section-title">
                   <Link to="/blog-detail">
                     Bluebase launches Tap to Pay on smartphone for international and domestic
@@ -111,10 +111,10 @@ const BlogPage = () => {
             {/* News Item 2 */}
             <div className="news-item card-h">
               <div className="news-img-box">
-                <img src={news3} alt="News" />
+                <img src={hrmsImgbM} alt="News" />
               </div>
               <div className="news-item-body">
-                <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
+                {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
                 <h2 className="section-title">
                   <Link to="/blog-detail">
                     Google Bard launches in EU, overcoming data privacy concerns in the region
