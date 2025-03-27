@@ -6,31 +6,6 @@ import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   const locations = [
-    {
-      flagImage: "assets/imgs/flag.png",
-      city: "New York, USA",
-      address: "720/5, Starc Street, North View, New York",
-    },
-    {
-      flagImage: "assets/imgs/flag.png",
-      city: "New York, USA",
-      address: "720/5, Starc Street, North View, New York",
-    },
-    {
-      flagImage: "assets/imgs/flag.png",
-      city: "New York, USA",
-      address: "720/5, Starc Street, North View, New York",
-    },
-    {
-      flagImage: "assets/imgs/flag.png",
-      city: "New York, USA",
-      address: "720/5, Starc Street, North View, New York",
-    },
-    {
-      flagImage: "assets/imgs/flag.png",
-      city: "New York, USA",
-      address: "720/5, Starc Street, North View, New York",
-    },
   ];
 
   return (

@@ -42,6 +42,7 @@ const BlogPage = () => {
       <section className="news-area">
         <div className="custom-container">
           {/* Sticky News */}
+          <Link to="/blogs/aiml"  >
           <div className="sticky-news d-flex card-h" style={{ marginBottom: '5px' }}>
             <div className="news-img-box">
               <img src={aimlImgbM} alt="News" />
@@ -49,29 +50,22 @@ const BlogPage = () => {
             <div className="news-content">
               {/* <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5> */}
               <h2 className="section-title">
-                OpenAI launches new alignment division to tackle risks of superintelligent AI
+              How AI and Lean Manufacturing Are Revolutionizing the Indian Industry
               </h2>
               <p>
-                The makers of AI have announced the company will be dedicating 20% of its compute
-                processing power over the next four years
+              Discover how Artificial Intelligence (AI) and Lean Manufacturing are reshaping the Indian industry
               </p>
-              <ul>
-                <li>
-                  <i className="las la-check"></i> Collaboration Tools
-                </li>
-                <li>
-                  <i className="las la-check"></i> Smart Reminders
-                </li>
-              </ul>
               <Link to="/blogs/aiml" className="theme-btn">
                 <i className="iconoir-arrow-up-right"></i>
               </Link>
             </div>
           </div>
+          </Link>
 
           {/* News Items */}
           <div className="news-items align-items-start">
             {/* News Item 1 */}
+            <Link to="/blogs/erp"  >
             <div className="news-item card-h" style={{ marginBottom: '5px' }}>
               <div className="news-img-box">
                 <img src={erpImgbM} alt="News" />
@@ -79,67 +73,42 @@ const BlogPage = () => {
               <div className="news-item-body">
                 {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
                 <h2 className="section-title">
-                  <Link to="/blog-detail">
-                    Bluebase launches Tap to Pay on smartphone for international and domestic
-                    business
+                  <Link to="/blogs/erp">
+                  Why Your Business Needs an Integrated ERP System in 2025
                   </Link>
                 </h2>
                 <p>
-                  Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                  service to replace payment terminals at point of sale.
+                Is your business ready for 2025? Discover why an integrated ERP system is essential
                 </p>
-                <ul>
-                  <li>
-                    <i className="las la-check"></i> Collaboration Tools
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Smart Reminders
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Requirement
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Task Management
-                  </li>
-                </ul>
                 <Link to="/blogs/erp" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
                 </Link>
               </div>
             </div>
+            </Link>
 
             {/* News Item 2 */}
+            <Link to="/blogs/hrms" >
             <div className="news-item card-h">
               <div className="news-img-box">
                 <img src={hrmsImgbM} alt="News" />
               </div>
               <div className="news-item-body">
                 {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
-                <h2 className="section-title">
-                  <Link to="/blog-detail">
-                    Google Bard launches in EU, overcoming data privacy concerns in the region
-                  </Link>
+                <h2 className="section-title">   
+                <Link to={"/blogs/hrms"}>
+                Transforming Workforce Management with AI-Powered HRMS Solutions
+                </Link>  
                 </h2>
                 <p>
-                  Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                  service to replace payment terminals at point of sale.
+                HR management is evolving with AI-powered HRMS solutions! Learn how automated payroll, smart recruitment tools, real-time attendance tracking, and more can transform HR operations.
                 </p>
-                <ul>
-                  <li>
-                    <i className="las la-check"></i> Collaboration Tools
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Smart Reminders
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Requirement
-                  </li>
-                </ul>
                 <Link to="/blogs/hrms" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
                 </Link>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </section>

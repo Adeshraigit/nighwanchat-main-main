@@ -6305,11 +6305,11 @@ img {
 
 
 .footer-area .footer-bottom  {
-    padding-top: 100px;
+    padding-top: 10px;
 }
 .footer-area .footer-bottom .custom-row {
     border-bottom: 1px solid rgba(255 255 255 / 20%);
-    padding-bottom: 67px;
+    padding-bottom: 10px;
 }
 .footer-area .footer-bottom .footer-contact-info {
     border-left: 1px solid rgba(255 255 255 / 20%);

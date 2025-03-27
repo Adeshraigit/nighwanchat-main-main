@@ -16,7 +16,7 @@ const Homepage = () => {
   return (
     <>
       <Helmet>
-  <title>Nighwan Technology Pvt. Ltd. | Digital Transformation & Software Development</title>
+  <title>Home</title>
   <meta name="description" content="Nighwan Technology Pvt. Ltd. is a leading software development and digital transformation company providing AI-driven IT solutions, ERP systems, web development, and lean manufacturing consultancy." />
   <meta name="keywords" content="digital transformation, software development, IT consulting, AI solutions, web development, enterprise software, ERP systems, SaaS solutions, lean manufacturing technology" />
 </Helmet>

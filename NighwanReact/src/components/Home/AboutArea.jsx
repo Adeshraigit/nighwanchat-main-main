@@ -37,7 +37,7 @@ const AboutArea = () => {
               </div>
               <div className="about-timeline-item">
                 <div className="about-timeline-item-inner">
-                  <img src="assets/imgs/bg-shape-2.svg" alt="Shape" className="line-shape" />
+                  <img src={bgShape2} alt="Shape" className="line-shape" />
                   <span className="number">02</span>
                   <h3>Tailored Solutions</h3>
                   <p>Develop IT solutions based on the analysis phase.</p>
@@ -45,7 +45,7 @@ const AboutArea = () => {
               </div>
               <div className="about-timeline-item">
                 <div className="about-timeline-item-inner">
-                  <img src="assets/imgs/bg-shape-2.svg" alt="Shape" className="line-shape" />
+                  <img src={bgShape2} alt="Shape" className="line-shape" />
                   <span className="number">03</span>
                   <h3>Deployment and Support</h3>
                   <p>Regularly communicate with our client to any concern.</p>

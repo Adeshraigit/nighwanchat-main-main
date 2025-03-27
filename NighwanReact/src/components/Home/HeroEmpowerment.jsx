@@ -21,8 +21,8 @@ const HeroEmpowerment = () => {
             Innovative AI & ML Solutions for a Smarter Tomorrow.</h2>
             <p>We integrate Artificial Intelligence, Machine Learning, and Lean Manufacturing expertise to optimize operations, reduce costs, and drive growth for businesses across industries.</p>
             <div className="btns-group d-flex">
-              <Link href="/service" className="theme-btn">Explore More</Link>
-              <Link href="/lean" className="theme-btn2">
+              <Link to="/service" className="theme-btn">Explore More</Link>
+              <Link to="/lean" className="theme-btn2">
                 Get in Touch <i className="iconoir-arrow-up-right"></i>
               </Link>
             </div>

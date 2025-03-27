@@ -10,10 +10,10 @@ const Footer = () => {
         {/* <img src={bgShape} alt="Shape" className="animation-slide-right bg-shape" /> */}
         {/* ===== Footer Bottom Section ===== */}
         {/* Desktop Version – remains unchanged */}
-        <div style={{ paddingTop: '0px', paddingBottom: '0px', marginTop: '0px' }} className="footer-bottom desktop-footer">
+        <div className="footer-bottom desktop-footer">
           <div className="custom-container">
             <div className="custom-row">
-              <div className="footer-all-links-wrap justify-content-between d-flex">
+              <div style={{ paddingTop: '0px', paddingBottom: '0px', marginTop: '0px' }} className="footer-all-links-wrap justify-content-between d-flex">
                 <div className="footer-links">
                   <h3>Services</h3>
                   <ul>
@@ -53,7 +53,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="footer-contact-info">
+              <div style={{ marginTop: '0px' , paddingTop: '0px', paddingBottom: '0px'  }}  className="footer-contact-info">
                 <div className="footer-contact-info-item">
                   <h4>Phone</h4>
                   <p>

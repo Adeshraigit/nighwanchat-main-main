@@ -10,7 +10,7 @@ import hwdIcon4 from '../assets/imgs/hwd-icon-4.svg';
 import portfolio2 from '../assets/imgs/nav/navbarAI.png'; 
 import portfolio1 from '../assets/imgs/nav/erp.png';
 import portfolio3 from '../assets/imgs/nav/ecommerce.png';    
-import portfolio4 from '../assets/imgs/nav/iot.png';
+import portfolio4 from '../assets/imgs/nav/Iot.png';
 import hrms from '../assets/imgs/hrms.png';
 import serviceIcon1 from '../assets/imgs/service-icon-1.svg';
 import serviceIcon7 from '../assets/imgs/service-icon-7.svg';
@@ -204,7 +204,7 @@ const Navbar = () => {
                                     </span>
                                     <div className="content">
                                       <h2>
-                                        <Link to="/service-details/data" onClick={handleMenuItemClick}>Data Analytics</Link>
+                                        <Link to="/service-details/Data" onClick={handleMenuItemClick}>Data Analytics</Link>
                                       </h2>
                                     </div>
                                   </div>
@@ -214,7 +214,7 @@ const Navbar = () => {
                                     </span>
                                     <div className="content">
                                       <h2>
-                                        <Link to="/service-details/iot" onClick={handleMenuItemClick}>IoT Solutions
+                                        <Link to="/service-details/Iot" onClick={handleMenuItemClick}>IoT Solutions
                                         </Link>
                                       </h2>
                                     </div>
@@ -402,7 +402,7 @@ const Navbar = () => {
                                   </div>
                                   <div className="content-box">
                                     <h3>
-                                      <Link to="/product-detail/iot" onClick={handleMenuItemClick}>
+                                      <Link to="/product-detail/Iot" onClick={handleMenuItemClick}>
                                         IoTGuard – Predictive Maintenance System
                                       </Link>
                                     </h3>
