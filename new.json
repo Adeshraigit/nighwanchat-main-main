@@ -1,0 +1,12 @@
+{
+    "name": "My Cool NFT",
+    "symbol": "MCN",
+    "description": "This is my awesome NFT",
+    "image": "https://imgs.search.brave.com/lZ4-S7aWJzTARCRbZfz_rYKRntltScnWozgXBkyhuWw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDY1NjQ5/MzYuanBnz",
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      }
+    ]
+  }

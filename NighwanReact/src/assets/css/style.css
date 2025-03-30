@@ -93,6 +93,7 @@ Input, textarea:  10px 'Syne', sans-serif
 */
 
 /* Varialbes */
+@import "tailwindcss";
 :root {
     --dark1: #1C1C1C;
     --dark2: #454545;

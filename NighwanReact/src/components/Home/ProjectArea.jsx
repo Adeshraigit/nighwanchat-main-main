@@ -69,16 +69,18 @@ const ProjectArea = () => {
               >
                 {projects.map((project, index) => (
                   <SwiperSlide key={index}>
+                    <Link style={{ color: 'black' }} to="/products">
                     <div className="project-item">
                       <div className="project-item-inner">
                         <h2 className={project.className || ''}>
-                          <Link style={{ color: 'black' }} to="/products">
+                          
                             {project.title}
-                          </Link>
+                          
                         </h2>
                         <img src={project.img} alt={`Project ${index + 1}`} />
                       </div>
                     </div>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>

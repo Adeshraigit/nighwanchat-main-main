@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroSection from '../components/BusinessConsulting/HeroSection'
-// import ClientArea from '../components/BusinessConsulting/ClientArea'
 import ServiceArea from '../components/BusinessConsulting/ServiceArea'
 import AboutArea from '../components/BusinessConsulting/AboutArea'
 import FeatureArea from '../components/BusinessConsulting/FeatureArea'
@@ -20,12 +19,7 @@ const BusinessConsulting = () => {
     <ServiceArea/>
     <AboutArea/>
     <FeatureArea/>
-    {/* Hide */}
-    {/* <NewsArea/> */}
-    {/* <PortfolioArea/> */}
-    {/* Hide */}
-    {/* <OurTeamArea/> */}
-    {/* <TestimonialArea/> */}
+
     <TestimonialArea/>
     <ContactArea/>
     </>

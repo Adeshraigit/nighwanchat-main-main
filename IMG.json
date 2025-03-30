@@ -1,0 +1,12 @@
+{
+    "name": "My Cool NFT",
+    "symbol": "MCN",
+    "description": "This is my awesome NFT",
+    "image": "https://www.gettyimages.com/photos/black-man-portrait-side-profile",
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      }
+    ]
+  }
