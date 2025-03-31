@@ -31,7 +31,7 @@ const ServiceArea = () => {
           </div>
         </div>
 
-        <div className="service2-items d-flex w-full">
+        {/* <div className="service2-items d-flex w-full">
           <div className="service2-card card-h">
             <img src={service1} alt="Service" />
             <h2>Process Optimization</h2>
@@ -64,7 +64,97 @@ const ServiceArea = () => {
             </p>
              
           </div>
+        </div> */}
+         <div className="w-full flex justify-center">
+      {/* Responsive grid: 1 column on mobile, 2 on small screens, 4 on large screens */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+        
+        {/* Card 1 */}
+        <div className="bg-white rounded-lg shadow p-6 text-center flex flex-col">
+          <img 
+            src={service1} 
+            alt="Service" 
+            className="mx-auto mb-4 h-28 w-48 object-contain"
+          />
+          <h2 
+            className="mb-2" 
+            style={{ fontFamily: "Yantramanav, sans-serif", fontSize: "24px" }}
+          >
+            Process Optimization
+          </h2>
+          <p 
+            className="text-gray-600" 
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: "12px" }}
+          >
+            Streamlining workflows for <br /> maximum efficiency and productivity.
+          </p>
         </div>
+
+        {/* Card 2 */}
+        <div className="bg-white rounded-lg shadow p-6 text-center flex flex-col">
+          <img 
+            src={service2} 
+            alt="Service" 
+            className="mx-auto mb-4 h-28 w-48 object-contain"
+          />
+          <h2 
+            className="mb-2" 
+            style={{ fontFamily: "Yantramanav, sans-serif", fontSize: "24px" }}
+          >
+            Waste Reduction
+          </h2>
+          <p 
+            className="text-gray-600" 
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: "12px" }}
+          >
+            Eliminating unnecessary processes <br /> to enhance resource utilization.
+          </p>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-white rounded-lg shadow p-6 text-center flex flex-col">
+          <img 
+            src={service3} 
+            alt="Service" 
+            className="mx-auto mb-4 h-28 w-48 object-contain"
+          />
+          <h2 
+            className="mb-2" 
+            style={{ fontFamily: "Yantramanav, sans-serif", fontSize: "24px" }}
+          >
+            Value Streamlining
+          </h2>
+          <p 
+            className="text-gray-600" 
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: "12px" }}
+          >
+            Enhancing value delivery with <br /> minimal operational bottlenecks.
+          </p>
+        </div>
+
+        {/* Card 4 */}
+        <div className="bg-white rounded-lg shadow p-6 text-center flex flex-col">
+          <img 
+            src={service4} 
+            alt="Service" 
+            className="mx-auto mb-4 h-28 w-48 object-contain"
+          />
+          <h2 
+            className="mb-2" 
+            style={{ fontFamily: "Yantramanav, sans-serif", fontSize: "24px" }}
+          >
+            Kaizen Implementation
+          </h2>
+          <p 
+            className="text-gray-600" 
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: "12px" }}
+          >
+            Driving continuous improvement <br /> through small, impactful changes.
+          </p>
+        </div>
+
+      </div>
+    </div>
 
         <div className="d-flex gap-24 service2-bottom-2-col">
           <div className="service3-card d-flex flex-1 card-h">

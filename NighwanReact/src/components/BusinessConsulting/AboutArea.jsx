@@ -30,13 +30,11 @@ const AboutArea = () => {
           <div className="about2-header">
             <h5 className="section-subtitle">SPECIALIZATION</h5>
             <h2 className="section-title">What Makes Nighwan Tech Unique?</h2>
-            <div>
+            {/* <div>
               Nighwan Technology Pvt. Ltd. is redefining lean manufacturing technology by integrating AI, ML, and data analytics into the core of its solutions. Unlike traditional ERP or manufacturing management systems, Nighwan Tech focuses on real-time data-driven decision-making, waste reduction, and process optimization tailored for the Indian market.
-            </div>
-          </div>
-
+            </div> */}
           {/* Tabs Navigation */}
-          <ul style={{ marginTop: "20px" }} className="nav nav-tabs about2-tabs" role="tablist">
+          <ul className="nav nav-tabs about2-tabs" role="tablist">
             <li className="nav-item">
               <button
                 className={`nav-link ${activeTab === "business_strategy" ? "active" : ""}`}
@@ -48,17 +46,17 @@ const AboutArea = () => {
                 AI Optimization
               </button>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <button
                 className={`nav-link ${activeTab === "market_analysis" ? "active" : ""}`}
                 onClick={() => handleTabClick("market_analysis")}
               >
                 <span className="icon">
-                  <img src={hwdIcon4} alt="Icon" />
+                  <img  src={hwdIcon4} alt="Icon" />
                 </span>
                 Demand Forecasting
               </button>
-            </li>
+            </li> */}
             <li className="nav-item">
               <button
                 className={`nav-link ${activeTab === "process_optimization" ? "active" : ""}`}
@@ -126,9 +124,9 @@ const AboutArea = () => {
               </button>
             </li>
           </ul>
-
+          </div>
           {/* Tabs Content */}
-          <div style={{ marginTop: "20px" }} className="tab-content about2-tab-content">
+          <div style={{ marginTop: "30px" }} className="tab-content about2-tab-content">
             {activeTab === "business_strategy" && (
               <div className="tab-pane fade show active">
                 <div className="about2-tab-content-body d-flex gap-24">

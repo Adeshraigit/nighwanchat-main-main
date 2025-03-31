@@ -500,356 +500,99 @@ const Navbar = () => {
 
 export default Navbar;
 
-// import React, { useState, useEffect } from 'react';
+// import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
-// import logo from '../assets/css/nighlogo.svg';
-
 
 // const Navbar = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [isPortfolioDropdownOpen, setPortfolioDropdownOpen] = useState(false);
-//   const [isServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-//   const [isMobile, setIsMobile] = useState(false);
-
-//   useEffect(() => {
-//     const checkScreenSize = () => {
-//       setIsMobile(window.innerWidth < 768);
-//     };
-
-//     checkScreenSize();
-//     window.addEventListener('resize', checkScreenSize);
-
-//     return () => window.removeEventListener('resize', checkScreenSize);
-//   }, []);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   const handleMenuItemClick = () => {
-//     if (isMobile) {
-//       setIsMenuOpen(false);
-//       setPortfolioDropdownOpen(false);
-//       setServicesDropdownOpen(false);
-//     }
-//   };
-
-//   const handlePortfolioDropdown = () => {
-//     if (!isMobile) setPortfolioDropdownOpen(true);
-//   };
-
-//   const handleServicesDropdown = () => {
-//     if (!isMobile) setServicesDropdownOpen(true);
-//   };
-
-//   const closeDropdowns = () => {
-//     if (!isMobile) {
-//       setPortfolioDropdownOpen(false);
-//       setServicesDropdownOpen(false);
-//     }
-//   };
-
-//   const togglePortfolioDropdown = (e) => {
-//     e.stopPropagation();
-//     setPortfolioDropdownOpen(prev => !prev);
-//   };
-
-//   const toggleServicesDropdown = (e) => {
-//     e.stopPropagation();
-//     setServicesDropdownOpen(prev => !prev);
-//   };
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const [dropdownOpen, setDropdownOpen] = useState(false);
 
 //   return (
-//     <header className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 shadow-md z-50">
-//       <div className="container mx-auto px-4 flex items-center justify-between py-4">
-//         {/* Logo Section */}
-//         <div className="flex items-center">
-//           <Link to="/" className="flex items-center">
-//             <img src={logo} alt="Logo" className="h-10" />
-//           </Link>
-//         </div>
+//     <nav className="bg-white dark:bg-gray-900 shadow border-b border-gray-200 dark:border-gray-700 z-50 relative">
+//       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-16">
+//           {/* Logo */}
+//           <div className="flex-shrink-0 flex items-center">
+//             <Link to="/" className="flex items-center gap-2">
+//               <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
+//               <span className="text-xl font-bold text-gray-900 dark:text-white">Flowbite</span>
+//             </Link>
+//           </div>
 
-//         {/* Desktop Navigation */}
-//         <nav className="hidden md:flex items-center space-x-6">
-//           <Link
-//             to="/"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Home
-//           </Link>
-//           <Link
-//             to="/our-roots"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Our Roots
-//           </Link>
-//           <Link
-//             to="/lean"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Lean Consultancy
-//           </Link>
-
-//           {/* Services Dropdown */}
-//           {/* <div className="relative">
+//           {/* Desktop Nav */}
+//           <div className="hidden md:flex md:space-x-8 items-center">
+//             <Link to="/" className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Home</Link>
 //             <button
-//               className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
-//               onMouseEnter={handleServicesDropdown}
-//               onMouseLeave={closeDropdowns}
-//               onClick={toggleServicesDropdown}
+//               onClick={() => setDropdownOpen(!dropdownOpen)}
+//               className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400 flex items-center"
 //             >
-//               <Link
-//             to="/lean"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Services
-//           </Link>
-              
-//               <svg
-//                 className="ml-2 h-3 w-3"
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 fill="none"
-//                 viewBox="0 0 24 24"
-//                 stroke="currentColor"
-//               >
-//                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+//               Company
+//               <svg className="w-3 h-3 ml-1" fill="none" viewBox="0 0 10 6">
+//                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1l4 4 4-4" />
 //               </svg>
 //             </button>
-//             {isServicesDropdownOpen && (
-//               <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-//                 <div className="p-4 space-y-4">
-//                   <div className="space-y-2">
-//                     <h3 className="text-gray-800 font-medium">Services</h3>
-//                     <Link
-//                       to="/lean"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       Lean Consultancy
-//                     </Link>
-//                     <Link
-//                       to="/service-details/Branding"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       Branding
-//                     </Link>
-//                     <Link
-//                       to="/service-details/ERP"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       ERP Development
-//                     </Link>
-//                     <Link
-//                       to="/service-details/aim"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       AI/ML Solutions
-//                     </Link>
-//                     <Link
-//                       to="/service-details/Web"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       Web / Mobile App
-//                     </Link>
-//                   </div>
-//                 </div>
-//               </div>
-//             )}
-//           </div> */}
-//           {/* Services Mega Menu */}
-// <div className="relative">
-//   <button
-//     className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
-//     onMouseEnter={handleServicesDropdown}
-//     onMouseLeave={closeDropdowns}
-//     onClick={toggleServicesDropdown}
-//   >
-//     Services
-//     <svg
-//       className="ml-2 h-3 w-3"
-//       xmlns="http://www.w3.org/2000/svg"
-//       fill="none"
-//       viewBox="0 0 24 24"
-//       stroke="currentColor"
-//     >
-//       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-//     </svg>
-//   </button>
-
-//   {isServicesDropdownOpen && (
-//     <div
-//       className="absolute left-0 mt-2 w-full max-w-6xl bg-white border border-gray-200 rounded-md shadow-lg z-50"
-//       onMouseLeave={closeDropdowns}
-//     >
-//       <div className="flex flex-col md:flex-row p-6 gap-6">
-//         {/* Left Grid with Icons */}
-//         <div className="grid grid-cols-2 gap-4 w-full md:w-1/2">
-//           <Link to="/lean" onClick={handleMenuItemClick} className="flex items-center p-4 rounded-md bg-gray-50 hover:bg-gray-100 transition">
-//             <div className="text-orange-500 text-xl mr-3">
-//               <i className="fas fa-project-diagram"></i>
-//             </div>
-//             <span className="text-sm font-medium">Lean Consultancy</span>
-//           </Link>
-//           <Link to="/service-details/aim" onClick={handleMenuItemClick} className="flex items-center p-4 rounded-md bg-gray-50 hover:bg-gray-100 transition">
-//             <div className="text-orange-500 text-xl mr-3">
-//               <i className="fas fa-robot"></i>
-//             </div>
-//             <span className="text-sm font-medium">AI/ML Solutions</span>
-//           </Link>
-//           <Link to="/service-details/analytics" onClick={handleMenuItemClick} className="flex items-center p-4 rounded-md bg-gray-50 hover:bg-gray-100 transition">
-//             <div className="text-orange-500 text-xl mr-3">
-//               <i className="fas fa-chart-bar"></i>
-//             </div>
-//             <span className="text-sm font-medium">Data Analytics</span>
-//           </Link>
-//           <Link to="/service-details/iot" onClick={handleMenuItemClick} className="flex items-center p-4 rounded-md bg-gray-50 hover:bg-gray-100 transition">
-//             <div className="text-orange-500 text-xl mr-3">
-//               <i className="fas fa-microchip"></i>
-//             </div>
-//             <span className="text-sm font-medium">IoT Solutions</span>
-//           </Link>
-//         </div>
-
-//         {/* Right Column List */}
-//         <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-sm text-gray-700">
-//           <div className="space-y-2">
-//             <h4 className="font-semibold text-gray-900 mb-1">Services</h4>
-//             <Link to="/lean" onClick={handleMenuItemClick} className="hover:text-blue-600 block">Lean Consultancy</Link>
-//             <Link to="/service-details/Branding" onClick={handleMenuItemClick} className="hover:text-blue-600 block">Branding</Link>
-//             <Link to="/service-details/ERP" onClick={handleMenuItemClick} className="hover:text-blue-600 block">ERP Development</Link>
-//             <Link to="/service-details/aim" onClick={handleMenuItemClick} className="hover:text-blue-600 block">AI/ML Solutions</Link>
-//             <Link to="/service-details/Web" onClick={handleMenuItemClick} className="hover:text-blue-600 block">Web / Mobile App</Link>
+//             <Link to="/marketplace" className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Marketplace</Link>
+//             <Link to="/resources" className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Resources</Link>
+//             <Link to="/contact" className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Contact</Link>
 //           </div>
-//           <div className="space-y-2 mt-6 md:mt-7">
-//             <Link to="/service-details/iot" onClick={handleMenuItemClick} className="hover:text-blue-600 block">IoT Solutions</Link>
-//             <Link to="/service-details/marketing" onClick={handleMenuItemClick} className="hover:text-blue-600 block">Digital Marketing</Link>
-//             <Link to="/service-details/analytics" onClick={handleMenuItemClick} className="hover:text-blue-600 block">Data Analytics</Link>
-//             <Link to="/service-details/devops" onClick={handleMenuItemClick} className="hover:text-blue-600 block">DevOps Services</Link>
-//             <Link to="/service-details/support" onClick={handleMenuItemClick} className="hover:text-blue-600 block">IT Support & Maintenance</Link>
+
+//           {/* Mobile toggle */}
+//           <div className="md:hidden flex items-center">
+//             <button
+//               onClick={() => setMenuOpen(!menuOpen)}
+//               className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white focus:outline-none"
+//             >
+//               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24">
+//                 <path
+//                   stroke="currentColor"
+//                   strokeWidth="2"
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                   d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+//                 />
+//               </svg>
+//             </button>
 //           </div>
 //         </div>
 //       </div>
-//     </div>
-//   )}
-// </div>
 
-
-//           {/* Product Dropdown */}
-//           <div className="relative">
-//             <button
-//               className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center"
-//               onMouseEnter={handlePortfolioDropdown}
-//               onMouseLeave={closeDropdowns}
-//               onClick={togglePortfolioDropdown}
-//             >
-//               <Link
-//             to="/lean"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
+//       {/* Mobile Menu */}
+//       {menuOpen && (
+//         <div className="md:hidden px-4 pt-2 pb-4 space-y-1">
+//           <Link to="/" className="block py-2 text-gray-900 dark:text-white hover:text-blue-600">Home</Link>
+//           <button
+//             onClick={() => setDropdownOpen(!dropdownOpen)}
+//             className="block w-full text-left py-2 text-gray-900 dark:text-white hover:text-blue-600"
 //           >
-//             Product
-//           </Link> 
-//               <svg
-//                 className="ml-2 h-3 w-3"
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 fill="none"
-//                 viewBox="0 0 24 24"
-//                 stroke="currentColor"
-//               >
-//                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-//               </svg>
-//             </button>
-//             {isPortfolioDropdownOpen && (
-//               <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-//                 <div className="p-4 space-y-4">
-//                   <div className="space-y-2">
-//                     <h3 className="text-gray-800 font-medium">Products</h3>
-//                     <Link
-//                       to="/product-detail/erp"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       Nighwan ERP – AI-Powered Business Management
-//                     </Link>
-//                     <Link
-//                       to="/product-detail/ai"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       LeanPro – AI-Based Sales & Demand Forecasting
-//                     </Link>
-//                     <Link
-//                       to="/product-detail/b2b"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       Nighwan B2B – Multi-Vendor E-Commerce Platform
-//                     </Link>
-//                     <Link
-//                       to="/product-detail/Iot"
-//                       className="block text-gray-600 hover:text-blue-600 text-sm"
-//                       onClick={handleMenuItemClick}
-//                     >
-//                       IoTGuard – Predictive Maintenance System
-//                     </Link>
-//                   </div>
-//                 </div>
-//               </div>
-//             )}
-//           </div>
-
-//           <Link
-//             to="/career"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Career
-//           </Link>
-//           <Link
-//             to="/blog"
-//             className="text-black hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-//             onClick={handleMenuItemClick}
-//           >
-//             Blogs
-//           </Link>
-//         </nav>
-
-//         {/* Contact Section */}
-//         <div className="flex items-center gap-4 md:gap-8 flex-wrap justify-end pr-2">
-//           <div className="flex flex-col items-start text-right">
-//             <span className="text-orange-500 font-medium whitespace-nowrap">
-//               Call Us
-//               <svg
-//                 className="inline ml-1 h-3 w-3"
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 fill="none"
-//                 viewBox="0 0 24 24"
-//                 stroke="currentColor"
-//               >
-//                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-//               </svg>
-//             </span>
-//             <span className="text-gray-800 font-medium text-sm whitespace-nowrap">
-//               +91 8985025794
-//             </span>
-//           </div>
-//           <Link
-//             to="/contact"
-//             className="bg-orange-500 text-white hover:bg-orange-700 px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap ml-2 md:ml-4"
-//           >
-//             Contact Us
-//           </Link>
+//             Company
+//           </button>
+//           <Link to="/marketplace" className="block py-2 text-gray-900 dark:text-white hover:text-blue-600">Marketplace</Link>
+//           <Link to="/resources" className="block py-2 text-gray-900 dark:text-white hover:text-blue-600">Resources</Link>
+//           <Link to="/contact" className="block py-2 text-gray-900 dark:text-white hover:text-blue-600">Contact</Link>
 //         </div>
-//       </div>
-//     </header>
+//       )}
+
+//       {/* Mega Menu */}
+//       {dropdownOpen && (
+//         <div className="absolute left-0 w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-600 shadow z-40">
+//           <div className="max-w-screen-xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-gray-900 dark:text-white">
+//             {[
+//               ['Online Stores', 'Tools for building ecommerce websites.'],
+//               ['Segmentation', 'Segment your audience by behavior.'],
+//               ['Marketing CRM', 'Manage customer relationships.'],
+//               ['Audience Management', 'Organize contacts easily.'],
+//               ['Creative Tools', 'Design tools for content.'],
+//               ['Marketing Automation', 'Automate email & workflows.'],
+//             ].map(([title, description], idx) => (
+//               <Link key={idx} to="/" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+//                 <div className="font-semibold">{title}</div>
+//                 <div className="text-sm text-gray-500 dark:text-gray-400">{description}</div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       )}
+//     </nav>
 //   );
 // };
 

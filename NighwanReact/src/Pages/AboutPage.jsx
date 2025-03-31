@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSection from "../components/About/HeroSection";
 import CompanyServiceArea from "../components/About/CompanyServiceArea";
-import Service4Area from "../components/About/Service4Area";
-import OurTeam from "../components/About/OurTeam";
+// import Service4Area from "../components/About/Service4Area";
+// import OurTeam from "../components/About/OurTeam";
 import AboutServiceArea from "../components/About/AboutServiceArea";
-import CtaArea from "../components/About/CtaArea";
+// import CtaArea from "../components/About/CtaArea";
 import ContactArea from "../components/Home/ContactArea";
 import { Helmet } from "react-helmet";  
 import TestimonialArea from "../components/Home/TestimonialArea";
