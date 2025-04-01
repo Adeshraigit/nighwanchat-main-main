@@ -21,9 +21,7 @@ const Homepage = () => {
   <meta name="keywords" content="digital transformation, software development, IT consulting, AI solutions, web development, enterprise software, ERP systems, SaaS solutions, lean manufacturing technology" />
 </Helmet>
       <HeroEmpowerment />
-      <div className='flex justify-center h-[10vh] w-[95vw] mt-5' >
       <ClientArea/>
-      </div>
       <HowWeDo/>
       <Service4Area/>
       <CaseStudioArea/>

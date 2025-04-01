@@ -4219,3 +4219,218 @@
         row-gap: 70px;
     }
 }
+
+/* Responsive styles for navbar */
+
+/* Add this to ensure the header stays fixed during scrolling */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+   */
+  /* Prevent line breaks in contact info */
+  .call-us,
+  .phone-number,
+  .theme-btn {
+    white-space: nowrap !important;
+  }
+
+  /* Responsive styles for different screen sizes */
+  @media screen and (max-width: 1400px) {
+    .theme-btn {
+      white-space: nowrap;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .nav-list {
+      gap: 10px;
+    }
+    .nav-link {
+      font-size: 11px;
+    }
+    .theme-btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .call-info {
+      display: none !important;
+    }
+    .theme-btn {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+    /* Mobile layout styles */
+    header {
+      padding: 0 1rem !important;
+    }
+    .logo-container {
+      margin-right: 0;
+    }
+    .nav-right {
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0 0.75rem !important;
+    }
+    .logo-container {
+      margin-right: 0;
+      min-width: 70px;
+    }
+    .logo-image {
+      max-height: 40px;
+    }
+    .theme-btn {
+      padding: 5px 8px;
+      font-size: 10px;
+    }
+    .nav-right {
+      gap: 8px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 0 0.5rem !important;
+    }
+    .logo-container {
+      min-width: 60px;
+    }
+    .logo-image {
+      max-height: 35px;
+    }
+    .theme-btn {
+      padding: 4px 6px;
+      font-size: 9px;
+    }
+  }
+
+/* Partner Section Styles */
+.partner-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.partner-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.partner-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.partner-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.partner-card {
+    flex: 0 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 100px;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.partner-image {
+    max-width: 100%;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 991px) {
+    .partner-card {
+        width: 140px;
+        height: 80px;
+        padding: 15px;
+    }
+
+    .partner-image {
+        max-height: 55px;
+    }
+
+    .partner-content {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .partner-card {
+        width: 120px;
+        height: 70px;
+        padding: 12px;
+    }
+
+    .partner-image {
+        max-height: 50px;
+    }
+
+    .partner-content {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .partner-card {
+        width: 100px;
+        height: 60px;
+        padding: 10px;
+    }
+
+    .partner-image {
+        max-height: 45px;
+    }
+
+    .partner-content {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partner-card {
+        width: 80px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .partner-image {
+        max-height: 40px;
+    }
+
+    .partner-content {
+        gap: 10px;
+    }
+}
